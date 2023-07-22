@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Display from './components/Display';
-import ProductForm from './components/ProductForm';
+import OneProduct from './components/OneProduct';
+import Main from './views/Main';
 
 function App() {
-  const [ products, setProducts ] = useState([]);
   return (
-    <div className="App">
-      <ProductForm products = { products } setProducts = { setProducts }/>
-      <h1> Products </h1>
-      <Display products = { products } setProducts = { setProducts }/>
+    <BrowserRouter>
+    <div className = "App">
+      <Routes>
+        <Route path = '/' default element = {<Main/>}/>
+        <Route path = '/products/:_id' element = { <OneProduct/> }/>
+      </Routes>
+      
     </div>
+    </BrowserRouter>
   );
 }
 
