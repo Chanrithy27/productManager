@@ -50,7 +50,8 @@
   margin-left: 10px;
   border: 1px solid black;
   border-radius: 15em;
-  padding: 3px;
+  padding: 5px;
+  text-align: center;
 }
 
 .create-btn {
@@ -59,6 +60,7 @@
   padding: 5px;
   border-radius: 15em;
   padding: 10px;
+  margin: 10px;
 }
 
 .product-links {
@@ -68,4 +70,20 @@
 
 .product-boxes {
   margin-bottom: 5px;
+}
+
+.delete-btn {
+  margin-right: 10px;
+  color: white;
+  background-color: black;
+}
+
+.home-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.edit-btn {
+  text-decoration: none;
+  margin: 0 15px;
 }
