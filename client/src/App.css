@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  width: 50%;
+  margin: 50px auto;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  border: 5px solid black;
+  border-radius: 5em;
+  color: white;
 }
 
 .App-logo {
@@ -35,4 +44,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.input-field {
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 15em;
+  padding: 3px;
+}
+
+.create-btn {
+  background-color: #282c34;
+  color: white;
+  padding: 5px;
+  border-radius: 15em;
+  padding: 10px;
+}
+
+.product-links {
+  text-decoration: underline;
+  color: white;
+}
+
+.product-boxes {
+  margin-bottom: 5px;
 }

@@ -20,8 +20,8 @@ const Display = (props) => {
             <h1> Products </h1>
             {
                 products.map((product, index) => (
-                    <div key = { product._id }>
-                        <Link to = {`/products/${product._id}`}> { product.title }</Link>
+                    <div key = { product._id } className="product-boxes">
+                        <Link to = {`/products/${product._id}`} className="product-links"> { product.title }</Link>
                     </div>
                 ))
             }

@@ -37,22 +37,22 @@ const ProductForm = (props) => {
             <div>
                 <p>
                     <label>Title:</label>
-                    <input type="text" onChange = {(e) => setTitle(e.target.value)} name="title"/>
+                    <input type="text" onChange = {(e) => setTitle(e.target.value)} name="title" className="input-field"/>
                 </p>
             </div>
             <div>
                 <p>
                     <label>Price:</label>
-                    <input type="number" onChange = {(e) => setPrice(e.target.value)} name="price"/>
+                    <input type="number" onChange = {(e) => setPrice(e.target.value)} name="price" className="input-field"/>
                 </p>
             </div>
             <div>
                 <p>
                     <label>Description:</label>
-                    <input type="text" onChange = {(e) => setDescription(e.target.value)} name="description"/>
+                    <input type="text" onChange = {(e) => setDescription(e.target.value)} name="description" className="input-field"/>
                 </p>
             </div>
-            <input type="submit" value="Create Product"/>
+            <input type="submit" value="Create Product" className="create-btn"/>
         </form>
     )
 };
